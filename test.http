@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:3000
+
+GET {{baseUrl}}/videos
+
+###
+POST {{baseUrl}}/videos
+Content-Type: application/json
+
+{
+      "name": "nguyen_viet_anh9",
+      "author": "Vanh Leg",
+      "content": "Vanh Leg|Động Thăng Thiên-Phạm Thoại",
+      "hashtag": ["#vanhleg", "#leg", "#nhacche", "#hai"],
+      "music": "nhạc nền - Vanh Leg",
+      "tym": "372K",
+      "comments": "3651",
+      "share": "1520",
+      "src": "https://v16-webapp.tiktok.com/34fe9a1839e6c9f587c94e801e7cf3db/63628be0/video/tos/maliva/tos-maliva-ve-0068c799-us/b16e121cb89e4fbabb6812d1bd85ee4b/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1976&bt=988&cs=0&ds=3&ft=kLO5qy-gZmo0PZQHQBkVQJvBDiHKJdmC0&mime_type=video_mp4&qs=0&rc=aDxlZzk2NTQ5OmU7Ozw5OUBpajc5OzU6Znc5ZTMzZzczNEAzMTZjYF9fNmExYTRiYS4vYSMyZGxfcjRfa2xgLS1kMS9zcw%3D%3D&l=20221102092357010251003189190A65D0&btag=80000",
+      "image": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-00…1200&x-signature=vx6HgQtCM4GHKdN2YAeX%2FlVziQ4%3D"
+    }
+
+###
+
+PATCH {{baseUrl}}/videos
+Content-Type: application/json
+
+{
+    "body": ""
+}
+
+###
+
+DELETE {{baseUrl}}/videos
